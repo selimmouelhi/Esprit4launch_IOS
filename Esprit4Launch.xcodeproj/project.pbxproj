@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C237AFD2192476A0057841F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237AFC2192476A0057841F /* AppDelegate.swift */; };
+		3C237AFF2192476A0057841F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237AFE2192476A0057841F /* ViewController.swift */; };
+		3C237B022192476A0057841F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B002192476A0057841F /* Main.storyboard */; };
+		3C237B052192476A0057841F /* Esprit4Launch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B032192476A0057841F /* Esprit4Launch.xcdatamodeld */; };
+		3C237B072192476C0057841F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B062192476C0057841F /* Assets.xcassets */; };
+		3C237B0A2192476C0057841F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B082192476C0057841F /* LaunchScreen.storyboard */; };
+		3C237B152192476C0057841F /* Esprit4LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B142192476C0057841F /* Esprit4LaunchTests.swift */; };
+		3C237B202192476C0057841F /* Esprit4LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C237B112192476C0057841F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C237AF12192476A0057841F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C237AF82192476A0057841F;
+			remoteInfo = Esprit4Launch;
+		};
+		3C237B1C2192476C0057841F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C237AF12192476A0057841F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C237AF82192476A0057841F;
+			remoteInfo = Esprit4Launch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C237AF92192476A0057841F /* Esprit4Launch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esprit4Launch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C237AFC2192476A0057841F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C237AFE2192476A0057841F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C237B012192476A0057841F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C237B042192476A0057841F /* Esprit4Launch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Esprit4Launch.xcdatamodel; sourceTree = "<group>"; };
+		3C237B062192476C0057841F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C237B092192476C0057841F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C237B0B2192476C0057841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C237B102192476C0057841F /* Esprit4LaunchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esprit4LaunchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C237B142192476C0057841F /* Esprit4LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esprit4LaunchTests.swift; sourceTree = "<group>"; };
+		3C237B162192476C0057841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C237B1B2192476C0057841F /* Esprit4LaunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esprit4LaunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esprit4LaunchUITests.swift; sourceTree = "<group>"; };
+		3C237B212192476C0057841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C237AF62192476A0057841F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B0D2192476C0057841F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B182192476C0057841F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C237AF02192476A0057841F = {
+			isa = PBXGroup;
+			children = (
+				3C237AFB2192476A0057841F /* Esprit4Launch */,
+				3C237B132192476C0057841F /* Esprit4LaunchTests */,
+				3C237B1E2192476C0057841F /* Esprit4LaunchUITests */,
+				3C237AFA2192476A0057841F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C237AFA2192476A0057841F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C237AF92192476A0057841F /* Esprit4Launch.app */,
+				3C237B102192476C0057841F /* Esprit4LaunchTests.xctest */,
+				3C237B1B2192476C0057841F /* Esprit4LaunchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C237AFB2192476A0057841F /* Esprit4Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3C237AFC2192476A0057841F /* AppDelegate.swift */,
+				3C237AFE2192476A0057841F /* ViewController.swift */,
+				3C237B002192476A0057841F /* Main.storyboard */,
+				3C237B062192476C0057841F /* Assets.xcassets */,
+				3C237B082192476C0057841F /* LaunchScreen.storyboard */,
+				3C237B0B2192476C0057841F /* Info.plist */,
+				3C237B032192476A0057841F /* Esprit4Launch.xcdatamodeld */,
+			);
+			path = Esprit4Launch;
+			sourceTree = "<group>";
+		};
+		3C237B132192476C0057841F /* Esprit4LaunchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C237B142192476C0057841F /* Esprit4LaunchTests.swift */,
+				3C237B162192476C0057841F /* Info.plist */,
+			);
+			path = Esprit4LaunchTests;
+			sourceTree = "<group>";
+		};
+		3C237B1E2192476C0057841F /* Esprit4LaunchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */,
+				3C237B212192476C0057841F /* Info.plist */,
+			);
+			path = Esprit4LaunchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C237AF82192476A0057841F /* Esprit4Launch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C237B242192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4Launch" */;
+			buildPhases = (
+				3C237AF52192476A0057841F /* Sources */,
+				3C237AF62192476A0057841F /* Frameworks */,
+				3C237AF72192476A0057841F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Esprit4Launch;
+			productName = Esprit4Launch;
+			productReference = 3C237AF92192476A0057841F /* Esprit4Launch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C237B0F2192476C0057841F /* Esprit4LaunchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C237B272192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4LaunchTests" */;
+			buildPhases = (
+				3C237B0C2192476C0057841F /* Sources */,
+				3C237B0D2192476C0057841F /* Frameworks */,
+				3C237B0E2192476C0057841F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C237B122192476C0057841F /* PBXTargetDependency */,
+			);
+			name = Esprit4LaunchTests;
+			productName = Esprit4LaunchTests;
+			productReference = 3C237B102192476C0057841F /* Esprit4LaunchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C237B1A2192476C0057841F /* Esprit4LaunchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C237B2A2192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4LaunchUITests" */;
+			buildPhases = (
+				3C237B172192476C0057841F /* Sources */,
+				3C237B182192476C0057841F /* Frameworks */,
+				3C237B192192476C0057841F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C237B1D2192476C0057841F /* PBXTargetDependency */,
+			);
+			name = Esprit4LaunchUITests;
+			productName = Esprit4LaunchUITests;
+			productReference = 3C237B1B2192476C0057841F /* Esprit4LaunchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C237AF12192476A0057841F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "selim mouelhi";
+				TargetAttributes = {
+					3C237AF82192476A0057841F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3C237B0F2192476C0057841F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C237AF82192476A0057841F;
+					};
+					3C237B1A2192476C0057841F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3C237AF82192476A0057841F;
+					};
+				};
+			};
+			buildConfigurationList = 3C237AF42192476A0057841F /* Build configuration list for PBXProject "Esprit4Launch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C237AF02192476A0057841F;
+			productRefGroup = 3C237AFA2192476A0057841F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C237AF82192476A0057841F /* Esprit4Launch */,
+				3C237B0F2192476C0057841F /* Esprit4LaunchTests */,
+				3C237B1A2192476C0057841F /* Esprit4LaunchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C237AF72192476A0057841F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C237B0A2192476C0057841F /* LaunchScreen.storyboard in Resources */,
+				3C237B072192476C0057841F /* Assets.xcassets in Resources */,
+				3C237B022192476A0057841F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B0E2192476C0057841F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B192192476C0057841F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C237AF52192476A0057841F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C237B052192476A0057841F /* Esprit4Launch.xcdatamodeld in Sources */,
+				3C237AFF2192476A0057841F /* ViewController.swift in Sources */,
+				3C237AFD2192476A0057841F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B0C2192476C0057841F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C237B152192476C0057841F /* Esprit4LaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C237B172192476C0057841F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C237B202192476C0057841F /* Esprit4LaunchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C237B122192476C0057841F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C237AF82192476A0057841F /* Esprit4Launch */;
+			targetProxy = 3C237B112192476C0057841F /* PBXContainerItemProxy */;
+		};
+		3C237B1D2192476C0057841F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C237AF82192476A0057841F /* Esprit4Launch */;
+			targetProxy = 3C237B1C2192476C0057841F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C237B002192476A0057841F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C237B012192476A0057841F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C237B082192476C0057841F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C237B092192476C0057841F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C237B222192476C0057841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C237B232192476C0057841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C237B252192476C0057841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4Launch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4Launch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C237B262192476C0057841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4Launch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4Launch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C237B282192476C0057841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4LaunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4LaunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esprit4Launch.app/Esprit4Launch";
+			};
+			name = Debug;
+		};
+		3C237B292192476C0057841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4LaunchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4LaunchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esprit4Launch.app/Esprit4Launch";
+			};
+			name = Release;
+		};
+		3C237B2B2192476C0057841F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4LaunchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4LaunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esprit4Launch;
+			};
+			name = Debug;
+		};
+		3C237B2C2192476C0057841F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esprit4LaunchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tn.esprit.Esprit4LaunchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esprit4Launch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C237AF42192476A0057841F /* Build configuration list for PBXProject "Esprit4Launch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C237B222192476C0057841F /* Debug */,
+				3C237B232192476C0057841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C237B242192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4Launch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C237B252192476C0057841F /* Debug */,
+				3C237B262192476C0057841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C237B272192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4LaunchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C237B282192476C0057841F /* Debug */,
+				3C237B292192476C0057841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C237B2A2192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4LaunchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C237B2B2192476C0057841F /* Debug */,
+				3C237B2C2192476C0057841F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C237B032192476A0057841F /* Esprit4Launch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C237B042192476A0057841F /* Esprit4Launch.xcdatamodel */,
+			);
+			currentVersion = 3C237B042192476A0057841F /* Esprit4Launch.xcdatamodel */;
+			path = Esprit4Launch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C237AF12192476A0057841F /* Project object */;
+}
