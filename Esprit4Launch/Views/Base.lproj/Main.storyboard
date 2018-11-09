@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ttt-66-UIh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Esprit4Launch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1serk60 - Imgur" translatesAutoresizingMaskIntoConstraints="NO" id="Z3z-o6-bfU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phW-1V-MNf">
+                                <rect key="frame" x="67" y="595" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign in "/>
+                                <connections>
+                                    <segue destination="7Gc-l2-qdI" kind="presentation" id="0GF-oT-jve"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ghN-wo-n62">
+                                <rect key="frame" x="67" y="129" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="      Esprit4Launch" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pT-sK-uDI">
+                                <rect key="frame" x="43" y="229" width="289" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfZ-M3-Jrs">
+                                <rect key="frame" x="67" y="530" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facebook"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kwG-Ug-HD0"/>
+                    <connections>
+                        <outlet property="facebookbuttonview" destination="LfZ-M3-Jrs" id="Bj8-Nl-JWF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="992.79999999999995" y="27.436281859070466"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T0M-Yk-hC6">
+            <objects>
+                <viewController id="7Gc-l2-qdI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0it-7m-b1d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="map statique" translatesAutoresizingMaskIntoConstraints="NO" id="OGS-II-SwY">
+                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" placeholder="Are you hungry?" translatesAutoresizingMaskIntoConstraints="NO" id="d0M-1g-zC2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <toolbar opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Wd-zF-qfg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Mapview" id="BfH-ge-t54"/>
+                                    <barButtonItem title="Restaurants" id="GSb-UE-dGp"/>
+                                    <barButtonItem title="Item" width="72" id="XU9-ba-crw"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Hr-N7-2gN" firstAttribute="trailing" secondItem="OGS-II-SwY" secondAttribute="trailing" id="FmH-SW-EIG"/>
+                            <constraint firstItem="5Hr-N7-2gN" firstAttribute="trailing" secondItem="d0M-1g-zC2" secondAttribute="trailing" id="GRE-Nn-qQ4"/>
+                            <constraint firstItem="OGS-II-SwY" firstAttribute="leading" secondItem="5Hr-N7-2gN" secondAttribute="leading" id="Ket-0R-Dcp"/>
+                            <constraint firstItem="d0M-1g-zC2" firstAttribute="leading" secondItem="5Hr-N7-2gN" secondAttribute="leading" id="MdS-Rk-uZU"/>
+                            <constraint firstItem="d0M-1g-zC2" firstAttribute="top" secondItem="5Hr-N7-2gN" secondAttribute="top" id="Yu6-7A-DJD"/>
+                            <constraint firstItem="5Hr-N7-2gN" firstAttribute="bottom" secondItem="d0M-1g-zC2" secondAttribute="bottom" constant="547" id="u03-YD-vmR"/>
+                            <constraint firstItem="OGS-II-SwY" firstAttribute="top" secondItem="d0M-1g-zC2" secondAttribute="bottom" id="xUS-45-4Sp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Hr-N7-2gN"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoX-Lk-aeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727.2" y="26.53673163418291"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hhd-s3-f8M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ttt-66-UIh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kVo-v3-H9J">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CIH-Fs-HAp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8h-fX-1Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1serk60 - Imgur" width="642" height="1050"/>
+        <image name="mainIcon" width="600" height="600"/>
+        <image name="map statique" width="375" height="676"/>
+    </resources>
+</document>

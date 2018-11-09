@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FDD1203AAB906226C16826 /* Pods_Esprit4Launch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B4D67DAEF0CF9F37C06EFF /* Pods_Esprit4Launch.framework */; };
 		3C237AFD2192476A0057841F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237AFC2192476A0057841F /* AppDelegate.swift */; };
 		3C237AFF2192476A0057841F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237AFE2192476A0057841F /* ViewController.swift */; };
 		3C237B022192476A0057841F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B002192476A0057841F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		3C237B0A2192476C0057841F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B082192476C0057841F /* LaunchScreen.storyboard */; };
 		3C237B152192476C0057841F /* Esprit4LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B142192476C0057841F /* Esprit4LaunchTests.swift */; };
 		3C237B202192476C0057841F /* Esprit4LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */; };
+		3C237B3121925ED50057841F /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B3021925ED50057841F /* credentials.plist */; };
+		3C8F563C2193B0A500256ADF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F563B2193B0A500256ADF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11778567DD5724E56ABEEF02 /* libPods-Esprit4LaunchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esprit4LaunchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C237AF92192476A0057841F /* Esprit4Launch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esprit4Launch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C237AFC2192476A0057841F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C237AFE2192476A0057841F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		3C237B1B2192476C0057841F /* Esprit4LaunchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esprit4LaunchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esprit4LaunchUITests.swift; sourceTree = "<group>"; };
 		3C237B212192476C0057841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C237B3021925ED50057841F /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		3C8F563B2193B0A500256ADF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A49F18A2D0D95E6050FA1B97 /* Pods-Esprit4Launch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esprit4Launch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch.release.xcconfig"; sourceTree = "<group>"; };
+		C999BF57C8F4F69A0F72E70F /* libPods-Esprit4LaunchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esprit4LaunchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5B4D67DAEF0CF9F37C06EFF /* Pods_Esprit4Launch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Esprit4Launch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB09F9B95519694B05DBC6FE /* Pods-Esprit4Launch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esprit4Launch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FDD1203AAB906226C16826 /* Pods_Esprit4Launch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,8 @@
 				3C237B132192476C0057841F /* Esprit4LaunchTests */,
 				3C237B1E2192476C0057841F /* Esprit4LaunchUITests */,
 				3C237AFA2192476A0057841F /* Products */,
+				6378C488751F498DCA14623D /* Pods */,
+				E56D4CC72CF2911C579776BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +112,11 @@
 		3C237AFB2192476A0057841F /* Esprit4Launch */ = {
 			isa = PBXGroup;
 			children = (
+				3C237B2F219249730057841F /* Services */,
+				3C237B2E219249640057841F /* Controllers */,
+				3C237B2D219248D50057841F /* Views */,
 				3C237AFC2192476A0057841F /* AppDelegate.swift */,
-				3C237AFE2192476A0057841F /* ViewController.swift */,
-				3C237B002192476A0057841F /* Main.storyboard */,
+				3C237B3021925ED50057841F /* credentials.plist */,
 				3C237B062192476C0057841F /* Assets.xcassets */,
 				3C237B082192476C0057841F /* LaunchScreen.storyboard */,
 				3C237B0B2192476C0057841F /* Info.plist */,
@@ -128,6 +143,49 @@
 			path = Esprit4LaunchUITests;
 			sourceTree = "<group>";
 		};
+		3C237B2D219248D50057841F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C237B002192476A0057841F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C237B2E219249640057841F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C237AFE2192476A0057841F /* ViewController.swift */,
+				3C8F563B2193B0A500256ADF /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C237B2F219249730057841F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6378C488751F498DCA14623D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB09F9B95519694B05DBC6FE /* Pods-Esprit4Launch.debug.xcconfig */,
+				A49F18A2D0D95E6050FA1B97 /* Pods-Esprit4Launch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E56D4CC72CF2911C579776BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11778567DD5724E56ABEEF02 /* libPods-Esprit4LaunchTests.a */,
+				C999BF57C8F4F69A0F72E70F /* libPods-Esprit4LaunchUITests.a */,
+				E5B4D67DAEF0CF9F37C06EFF /* Pods_Esprit4Launch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C237B242192476C0057841F /* Build configuration list for PBXNativeTarget "Esprit4Launch" */;
 			buildPhases = (
+				44300F7451DECD49FBF8408F /* [CP] Check Pods Manifest.lock */,
 				3C237AF52192476A0057841F /* Sources */,
 				3C237AF62192476A0057841F /* Frameworks */,
 				3C237AF72192476A0057841F /* Resources */,
+				2E902A899842AF6974678148 /* [CP] Copy Pods Resources */,
+				7ACD054957230AC6046D3B5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C237B0A2192476C0057841F /* LaunchScreen.storyboard in Resources */,
+				3C237B3121925ED50057841F /* credentials.plist in Resources */,
 				3C237B072192476C0057841F /* Assets.xcassets in Resources */,
 				3C237B022192476A0057841F /* Main.storyboard in Resources */,
 			);
@@ -254,6 +316,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E902A899842AF6974678148 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44300F7451DECD49FBF8408F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Esprit4Launch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7ACD054957230AC6046D3B5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C237AF52192476A0057841F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +407,7 @@
 				3C237B052192476A0057841F /* Esprit4Launch.xcdatamodeld in Sources */,
 				3C237AFF2192476A0057841F /* ViewController.swift in Sources */,
 				3C237AFD2192476A0057841F /* AppDelegate.swift in Sources */,
+				3C8F563C2193B0A500256ADF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +580,7 @@
 		};
 		3C237B252192476C0057841F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB09F9B95519694B05DBC6FE /* Pods-Esprit4Launch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +598,7 @@
 		};
 		3C237B262192476C0057841F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49F18A2D0D95E6050FA1B97 /* Pods-Esprit4Launch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

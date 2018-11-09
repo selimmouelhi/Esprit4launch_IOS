@@ -1,0 +1,6 @@
+framework module Pods_Esprit4Launch {
+  umbrella header "Pods-Esprit4Launch-umbrella.h"
+
+  export *
+  module * { export * }
+}
