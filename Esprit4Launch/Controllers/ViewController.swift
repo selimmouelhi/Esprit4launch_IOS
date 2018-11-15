@@ -33,9 +33,11 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
     
     
     @IBAction func googleLogin(_ sender: Any) {
-        GIDSignIn.sharedInstance().signIn()
+        GIDSignIn.sharedInstance()?.signIn()
+        
 
     }
+    
     func logoutSocial() {AccessToken.current = nil
         UserProfile.current = nil
         let loginManager = LoginManager()
@@ -71,7 +73,6 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
     @IBOutlet weak var googleSignInButton: GIDSignInButton!
     let ClientId = "362625310410-fc0pii1j1dgsf4fbn9sp38en12lrq1m1.apps.googleusercontent.com"
     let appDelegate = UIApplication.shared.delegate as? AppDelegate
-
     //init(id:String,name:String,prenom:String,phone:Int,email:String)
     //imageUrl: (user.profile.imageURL(withDimension: 200)?.absoluteString)!
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -85,6 +86,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
                // self.continueToHome()
             
         } else {
+            print("error houni")
             print("\(error.localizedDescription)")
         }
     }
@@ -116,7 +118,6 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
                 if let email = dictionary?["email"] as? String, let firstName = dictionary?["first_name"] as? String, let lastName = dictionary?["last_name"] as? String, let id = dictionary?["id"] as? String {
                     self.appDelegate!.utilisateur = User(id: (self.appDelegate?.FACEBOOK_UID_PREFIX)!+id, name: lastName, prenom: lastName, email: email)
                     self.addUserDB(user: self.appDelegate!.utilisateur!)
-                  //  self.checkSocialUserExistance()
                 }
                 break;
             }
@@ -147,9 +148,9 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
         super.viewDidLoad()
         
         
-        GIDSignIn.sharedInstance().clientID = ClientId
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance()?.clientID = ClientId
+        GIDSignIn.sharedInstance()?.delegate = self
+        GIDSignIn.sharedInstance()?.uiDelegate = self
         
         initGoogleButton()
         initFacebookButton()
@@ -172,30 +173,14 @@ class ViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate {
         print(string7 + "ahaya string")
         
       
-        let myurl = NSURL(string:"http://localhost:3003/web_services/")
-        let request = NSMutableURLRequest(url: myurl! as URL)
-        request.httpMethod = "POST"
-        
-        let poststring = string2 + string3 + string4 + string3 + string5 + string6
-        print(poststring)
         
         
-        request.httpBody = poststring.data(using: String.Encoding.utf8)
-        let task = URLSession.shared.dataTask(with: request as URLRequest){
-            data,response,error in
-            if error != nil{
-                print("error")
-            }
-            
-            print(response)
-            
-            let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            print(responseString)
-            
-            
-        }
+        Alamofire.request(string7)
         
-        task.resume()
+        
+       
+        
+        
         
             
         

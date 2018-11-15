@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import GoogleSignIn
 import FBSDKCoreKit
+import GoogleMaps
+import GooglePlaces
 
 
 
@@ -28,15 +30,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
         GIDSignIn.sharedInstance().delegate = self
         FBSDKApplicationDelegate.sharedInstance()?.application(application, didFinishLaunchingWithOptions: launchOptions)*/
 
-        
+
         
         return true
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let sourceApplication =  options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String
-        let annotation = options[UIApplication.OpenURLOptionsKey.annotation]
+       
         let checkFB = FBSDKApplicationDelegate.sharedInstance()?.application(app, open: url, options: options)
-        let checkGoogle = GIDSignIn.sharedInstance().handle(url as URL!,sourceApplication: sourceApplication,annotation: annotation)
+        let checkGoogle = GIDSignIn.sharedInstance().handle(url as URL?,
+                                                            sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                            annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+                                                                
+                                                                
+       
+                                                                
+        
         return checkGoogle || checkFB!
     }
    
