@@ -17,6 +17,8 @@
 		3C237B152192476C0057841F /* Esprit4LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B142192476C0057841F /* Esprit4LaunchTests.swift */; };
 		3C237B202192476C0057841F /* Esprit4LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */; };
 		3C237B3121925ED50057841F /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C237B3021925ED50057841F /* credentials.plist */; };
+		3C4DA46C219B8E8300B6F21D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DA46B219B8E8300B6F21D /* User.swift */; };
+		3C7ABFD7219D6E9500C97866 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ABFD6219D6E9500C97866 /* MapViewController.swift */; };
 		3C8F563C2193B0A500256ADF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8F563B2193B0A500256ADF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		3C237B1F2192476C0057841F /* Esprit4LaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esprit4LaunchUITests.swift; sourceTree = "<group>"; };
 		3C237B212192476C0057841F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C237B3021925ED50057841F /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
+		3C4DA46B219B8E8300B6F21D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3C7ABFD6219D6E9500C97866 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3C8F563B2193B0A500256ADF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A49F18A2D0D95E6050FA1B97 /* Pods-Esprit4Launch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Esprit4Launch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch.release.xcconfig"; sourceTree = "<group>"; };
 		C999BF57C8F4F69A0F72E70F /* libPods-Esprit4LaunchUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Esprit4LaunchUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,7 @@
 		3C237AFB2192476A0057841F /* Esprit4Launch */ = {
 			isa = PBXGroup;
 			children = (
+				3C4DA46A219B8E1A00B6F21D /* Entities */,
 				3C237B2F219249730057841F /* Services */,
 				3C237B2E219249640057841F /* Controllers */,
 				3C237B2D219248D50057841F /* Views */,
@@ -154,6 +159,7 @@
 		3C237B2E219249640057841F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C7ABFD6219D6E9500C97866 /* MapViewController.swift */,
 				3C237AFE2192476A0057841F /* ViewController.swift */,
 				3C8F563B2193B0A500256ADF /* HomeViewController.swift */,
 			);
@@ -165,6 +171,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3C4DA46A219B8E1A00B6F21D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3C4DA46B219B8E8300B6F21D /* User.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		6378C488751F498DCA14623D /* Pods */ = {
@@ -326,12 +340,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +388,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Esprit4Launch/Pods-Esprit4Launch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
@@ -383,6 +403,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
@@ -405,8 +427,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C237B052192476A0057841F /* Esprit4Launch.xcdatamodeld in Sources */,
+				3C7ABFD7219D6E9500C97866 /* MapViewController.swift in Sources */,
 				3C237AFF2192476A0057841F /* ViewController.swift in Sources */,
 				3C237AFD2192476A0057841F /* AppDelegate.swift in Sources */,
+				3C4DA46C219B8E8300B6F21D /* User.swift in Sources */,
 				3C8F563C2193B0A500256ADF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

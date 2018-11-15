@@ -8,7 +8,10 @@ target 'Esprit4Launch' do
 	pod 'GoogleSignIn'
 	pod 'FacebookCore'
 	pod 'FacebookLogin'
-
+	pod 'Alamofire'
+  	pod 'AlamofireImage'
+	pod 'GoogleMaps'
+  	pod 'GooglePlaces'
 
 
 
